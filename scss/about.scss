@@ -191,12 +191,6 @@ li {
         margin-bottom: 160px;
         position: relative;
 
-        &:hover::after,
-        &:hover::before {
-           bottom: 30px;
-        
-        }
-      
         &::before,
         &::after {
             content: "";
@@ -207,6 +201,7 @@ li {
             background-color: $maincolor;
             transition: 0.3s;
         }
+    
      
         &::before {
             width: 60px;
@@ -220,6 +215,15 @@ li {
         }
      
     }
+
+  :last-child{
+      &::before {
+          content: none;
+      }
+      &::after {
+          content: none;
+      }
+  }
 }
 
   //Aboutここまで

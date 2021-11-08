@@ -184,10 +184,6 @@ li {
   position: relative;
 }
 
-.about-text p:hover::after, .about-text p:hover::before {
-  bottom: 30px;
-}
-
 .about-text p::before, .about-text p::after {
   content: "";
   position: absolute;
@@ -213,6 +209,14 @@ li {
           transform: translate(0px, 30px) rotate(135deg);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.about-text :last-child::before {
+  content: none;
+}
+
+.about-text :last-child::after {
+  content: none;
 }
 
 .footer-box {
