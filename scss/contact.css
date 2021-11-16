@@ -1,1 +1,36 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+label {
+  font-size: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px #707070 solid;
+  border-radius: 3px;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  max-width: 480px;
+  width: 100%;
+}
+
+textarea {
+  max-width: 740px;
+  width: 100%;
+  height: 8rem;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  background-color: #707070;
+  border-radius: 50px;
+  color: #fff;
+  padding: 15px 60px;
+}
+/*# sourceMappingURL=contact.css.map */
