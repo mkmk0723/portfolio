@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="utf-8">
     <!-- IEで常に標準モードで表示させる -->
@@ -9,8 +10,8 @@
     <!-- 公開前は検索エンジンにインデックスさせず、他のページの巡回を促す。 -->
     <meta name="robots" content="noindex,follow">
     <!-- 電話番号の自動リンク化を無効 -->
-    <meta name="format-detection" content="telephone=no"> 
-       
+    <meta name="format-detection" content="telephone=no">
+
     <!--SEO対策の補助的措置-->
     <!-- サイトのタイトル -->
     <title>Portfolio Annemiki</title>
@@ -21,7 +22,7 @@
     レスポンシブ対応などができます。「使って楽しい、心地よい」サイト作りを目指しています。">
     <!-- 重複するURLを一本化 -->
     <link rel="canonical" href="正規化するURL">
-      
+
     <!--SNS対策-->
     <meta property="og:site_name" content="Portfolio Annemiki">
     <meta property="og:title" content="Portfolio Annemiki">
@@ -32,17 +33,18 @@
     <meta property="fb:app_id" content="AppID">
     <meta name="twitter:card" content="summaryあるいは、summary_large_imageの指定ができます。">
     <meta name="twitter:site" content="サイトのURLを記載します。">
-　　<!--css-->
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-     <link rel="stylesheet" href="scss/main.css">
-     <link rel="stylesheet" href="scss/contact.css">
-    </head>
+    　　
+    <!--css-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/contact.css">
+</head>
 
 <body>
     <div class="contaienr">
         <!--ヘッダー-->
-        <header id="header" class="wrapper">
+        <header id="header">
             <h1 class="site-title">
                 <a href="index.html"><img src="img/logo.png" alt="Portfolio Annemiki"></a>
             </h1>
@@ -66,27 +68,25 @@
         <main>
             <section id="contact" class="wrapper">
                 <h2 class="section-title">contact</h2>
-            <form action="#">
-                <div>
-                    <label for="name">name</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div>
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email">
-                </div>
+                <form action="#">
+                    <div class="flex-box">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
 
-                <div><label for="subject">subject</label>
-                    <input type="text" id="subject" name="subject">
-                </div>
-                <div>
-                    <label for="message">massage</label>
-                    <textarea name="massage" id="massage"></textarea>
-                </div>
-                <input type="submit" class="submit" value="確認する">
-            </form>    
-             
-                    
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="massage">Message</label>
+                            <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                        </div>
+                        </div>
+                        <input type="submit" class="submit" value="send">
+                </form>
+
+
             </section>
         </main>
     </div>
@@ -100,7 +100,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html.#about">About</a></li>
                 <li><a href="index.html.#skills">Skills</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><a href="works.html">Works</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
@@ -113,4 +113,5 @@
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
