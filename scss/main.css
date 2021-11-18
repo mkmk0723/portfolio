@@ -98,7 +98,8 @@ li {
 }
 
 #header {
-  padding: 40px 60px 0 50px;
+  padding: 40px 50px 0;
+  margin-top: 0;
 }
 
 #header .site-title {

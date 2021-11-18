@@ -1,3 +1,7 @@
+.site-title a {
+  margin-top: -28px;
+}
+
 @media (min-width: 860px) {
   .flex-box {
     display: -webkit-box;
@@ -13,6 +17,10 @@
   textarea {
     min-width: 420px;
   }
+}
+
+form {
+  margin-bottom: 100px;
 }
 
 form div {

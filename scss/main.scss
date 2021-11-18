@@ -11,6 +11,7 @@ body {
     color: $maincolor;
     font-family: $mainfontfamily;
     letter-spacing: 0.1em;
+   
 }
 h3,p {
     font-family:sans-serif;
@@ -109,8 +110,8 @@ li {
 
 // ヘッダー
 #header {
-    padding: 40px 60px 0 50px;   
-
+    padding: 40px 50px 0;   
+    margin-top: 0;
     .site-title {
          line-height: 1px;
 

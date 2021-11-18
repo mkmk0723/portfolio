@@ -35,6 +35,7 @@
 .works-item .works-text p {
   font-size: 0.9rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .works-item .works-text .url {

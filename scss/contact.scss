@@ -2,7 +2,9 @@
 
 $maincolor:#707070;
 $mainfontfamily:Segoe Print;
-
+.site-title a {
+    margin-top: -28px;
+}
 @media (min-width:860px){
 
 .flex-box {
@@ -19,8 +21,12 @@ textarea {
     min-width: 420px;
 }
 }
-form div {
+form {
+     margin-bottom: 100px;
+
+div {
     margin:0 auto 14px ;
+}
 }
 label {
     font-size: 1.125rem;
