@@ -146,13 +146,16 @@ li {
       transition: 0.3s ease-in-out;
       
       &:nth-child(1) {
+          
           top: 36px;
       }
       &:nth-child(2) {
+       
          top: 50px; 
       }
       &:nth-child(3) {
-          top: 64px;
+
+        top: 64px;
       }
   }
 }
@@ -312,9 +315,11 @@ li {
 //Worksここまで//
 
 //footer
+
 .footer-box {
     display: flex;
     justify-content: space-between;
+    padding: 0 50px;
     .site-title img{
         display: block;
         padding-top: 92px;
@@ -329,3 +334,6 @@ footer p {
     margin-bottom: 10px;
 }
 //footerここまで
+@media screen and(min-width: 800px;){
+    
+}

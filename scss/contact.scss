@@ -5,29 +5,33 @@ $mainfontfamily:Segoe Print;
 .site-title a {
     margin-top: -28px;
 }
-@media (min-width:860px){
 
-.flex-box {
-    display: flex;
-    justify-content: space-between;
-}
-input {
-    &[type="text"],
-    &[type="email"]{
-      max-width: 450px;
+@media screen and(min-width:800px){
+
+    .flex-box {
+        display: flex;
+        justify-content: center;
     }
-}
-textarea {
-    min-width: 420px;
-}
-}
-form {
-     margin-bottom: 100px;
+    input {
+        &[type="text"],
+        &[type="email"]{
+          max-width: 450px;
+        }
+    }
+    textarea {
+        min-width: 420px;
+    }
+}    
 
-div {
-    margin:0 auto 14px ;
+form {
+     margin-bottom: 256px;
+
+     div:first-child{
+         margin-right: 3%;
+     }
 }
-}
+
+
 label {
     font-size: 1.125rem;
     margin-bottom: 10px;
@@ -73,4 +77,7 @@ textarea {
 }
 
 
-
+footer p {
+    display: block;
+    margin-bottom: 10px;
+}

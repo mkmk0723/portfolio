@@ -313,6 +313,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 50px;
 }
 
 .footer-box .site-title img {
@@ -328,5 +329,9 @@ footer p {
   text-align: center;
   font-size: .9rem;
   margin-bottom: 10px;
+}
+
+@media screen {
+  min-width: 800px;
 }
 /*# sourceMappingURL=main.css.map */
