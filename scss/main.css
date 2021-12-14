@@ -98,16 +98,15 @@ li {
 }
 
 #header {
-  padding: 40px 50px 0;
-  margin-top: 0;
+  background: url(../img/mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
 }
 
-#header .site-title {
-  line-height: 1px;
-}
-
-#header .site-title a {
-  display: block;
+#header #animation svg g {
+  opacity: 0;
 }
 
 .hamburger {
@@ -283,8 +282,8 @@ li {
   display: -ms-grid;
   display: grid;
   gap: 100px;
-  -ms-grid-columns: (minmax(480px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  -ms-grid-columns: (min-max(480px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, min-max(480px, 1fr));
   margin-bottom: 120px;
 }
 
@@ -329,9 +328,5 @@ footer p {
   text-align: center;
   font-size: .9rem;
   margin-bottom: 10px;
-}
-
-@media screen {
-  min-width: 800px;
 }
 /*# sourceMappingURL=main.css.map */

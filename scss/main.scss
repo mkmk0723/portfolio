@@ -41,6 +41,7 @@ li {
     margin: 0 auto;
 }
 
+
 //ボタン
 .more {
     display: block;
@@ -110,16 +111,18 @@ li {
 
 // ヘッダー
 #header {
-    padding: 40px 50px 0;   
-    margin-top: 0;
-    .site-title {
-         line-height: 1px;
+    background: url(../img/mainvisual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
 
-       a {
-           display: block;
-       }
+ #animation svg g {
+        opacity: 0;
     }
-   }
+
+}
+   
 
 //ハンバーガーメニュー
 
@@ -239,6 +242,7 @@ li {
     img {
         display: block;
         margin: 0 auto 120px; 
+        
     }
     .about-text {
         text-align: center;
@@ -297,7 +301,7 @@ li {
 .works-box {
     display: grid;
     gap: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    grid-template-columns: repeat(auto-fit, min-max(480px, 1fr));
     margin-bottom: 120px;
 }
 .works-item {
@@ -334,6 +338,3 @@ footer p {
     margin-bottom: 10px;
 }
 //footerここまで
-@media screen and(min-width: 800px;){
-    
-}
