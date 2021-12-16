@@ -11,6 +11,8 @@ body {
     color: $maincolor;
     font-family: $mainfontfamily;
     letter-spacing: 0.1em;
+    margin: 0;
+  
    
 }
 h3,p {
@@ -110,23 +112,18 @@ li {
 
 
 // ヘッダー
-#header {
+
+
+    .bg-pg{
     background: url(../img/mainvisual.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     min-height: 100vh;
+   box-shadow: ;
 
-    g [属性スタイル] {
-        fill: none;
-        stroke-linecap: round;
-        stroke-dashoffset: 1;
-        stroke: rgb(255, 255, 255);
-        stroke-width: 1.4;
-        opacity: 0;
-    }
+     }
 
-}
    
 
 //ハンバーガーメニュー
@@ -340,6 +337,6 @@ li {
 footer p {
     text-align: center;
     font-size: .9rem;
-    margin-bottom: 10px;
+   
 }
 //footerここまで

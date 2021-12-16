@@ -1,5 +1,18 @@
-.site-title a {
-  margin-top: -28px;
+.bg-pg {
+  background: url(../img/mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#contact {
+  padding-top: 180px;
+}
+
+#header .site-title {
+  position: absolute;
+  top: 40px;
+  left: 50px;
 }
 
 @media screen and (min-width: 800px) {
@@ -75,6 +88,5 @@ textarea {
 
 footer p {
   display: block;
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=contact.css.map */

@@ -1,3 +1,20 @@
+.bg-pg {
+  background: url(../img/mainvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+#header .site-title {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
+#works {
+  padding-top: 180px;
+}
+
 .works-item {
   display: -webkit-box;
   display: -ms-flexbox;
