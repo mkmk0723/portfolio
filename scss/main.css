@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
 }
@@ -105,7 +106,12 @@ li {
   min-height: 100vh;
 }
 
-#header #animation svg g {
+#header g [属性スタイル] {
+  fill: none;
+  stroke-linecap: round;
+  stroke-dashoffset: 1;
+  stroke: white;
+  stroke-width: 1.4;
   opacity: 0;
 }
 

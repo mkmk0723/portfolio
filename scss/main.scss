@@ -117,7 +117,12 @@ li {
     background-position: center top;
     min-height: 100vh;
 
- #animation svg g {
+    g [属性スタイル] {
+        fill: none;
+        stroke-linecap: round;
+        stroke-dashoffset: 1;
+        stroke: rgb(255, 255, 255);
+        stroke-width: 1.4;
         opacity: 0;
     }
 
