@@ -124,6 +124,20 @@ li {
 
      }
 
+     .site-title {
+         display: block;
+         opacity: 0;
+         font-size: 4rem;
+         text-align: center;
+
+         span {
+             opacity: 0;
+             transition: 0.6s ease-in-out;
+         }
+     }
+
+   
+
    
 
 //ハンバーガーメニュー
