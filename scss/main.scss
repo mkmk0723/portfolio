@@ -124,22 +124,18 @@ li {
 
      }
 
-     .site-title {
+    .main-title {
          display: block;
          opacity: 0;
-         font-size: 4rem;
+         font-size: 6rem; 
          text-align: center;
-
+         padding-top: 22%;
+  
          span {
              opacity: 0;
              transition: 0.6s ease-in-out;
          }
      }
-
-   
-
-   
-
 //ハンバーガーメニュー
 
 .hamburger {

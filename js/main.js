@@ -51,7 +51,7 @@ $(function(){
 
 
     /*-------------site-titleアニメーション--------------------------------*/ 
-var container = $(".site-title");
+var container = $(".main-title");
 // アニメーションのスピード
 var speed = 80;
 

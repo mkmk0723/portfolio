@@ -108,10 +108,11 @@ li {
           box-shadow: inset 0px 0px 20px 20px #fff;
 }
 
-.site-title {
+.main-title {
   display: block;
   opacity: 0;
-  font-size: 4rem;
+  padding-top: 22%;
+  font-size: 6rem;
   text-align: center;
 }
 
