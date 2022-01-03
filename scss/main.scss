@@ -6,7 +6,7 @@ $mainfontfamily:Segoe Print;
 //ブレイクポイント
 $mb: 767px;
 //@mediaのフォーマット
-@media mobile {
+@mixin mobile {
     @media screen and (max-width: $mb){
         @content;
     }
@@ -21,7 +21,6 @@ body {
     font-family: $mainfontfamily;
     letter-spacing: 0.1em;
     margin: 0;
-  
    
 }
 h3,p {
@@ -61,7 +60,7 @@ li {
 .more {
     display: block;
     text-align: center;
-    margin-bottom: 180px;
+    margin-bottom: 22%;
 
 .btn {
    border:solid 1px $maincolor;
@@ -100,26 +99,36 @@ li {
 }
    
 }
+
+.site-title {
+    @include mobile{
+        width: 30%;
+    }
+}
 // セクションタイトル用の共通クラス
 
 .section-title {
     font-size: 3rem;
-    margin-bottom: 180px;
+    margin-bottom: 22%;
     text-align: center;
     position: relative;
 
 // 類似要素でタイトル下に下線を引く
     &::after{
      content: "";
-     width: 100px;
+     width: 10%;
      height: 3px;
      background-color: $maincolor;
      display: block;
      position: absolute;
-     bottom: -20px;
+     bottom: -4%;
      left: 0;
      right: 0;
      margin: 0 auto; 
+    }
+
+    @include mobile{
+        font-size: 2.0rem;
     }
 }
 
@@ -143,6 +152,9 @@ li {
          font-size: 6rem; 
          text-align: center;
          padding-top: 22%;
+         @include mobile {
+             font-size: 4rem;
+         }
   
          span {
              opacity: 0;
@@ -152,11 +164,11 @@ li {
 //ハンバーガーメニュー
 
 .hamburger {
-  width: 100px;
-  height: 100px;
+  width: 30%;
+  height: 30%;
   position: fixed;
-  top: 30px;
-  right: 50px;
+  top: 4%;
+  right: -12%;
   z-index: 30;
   cursor: pointer;
   transition: 0.3s;
@@ -166,26 +178,31 @@ li {
   }
 //メニューが閉じているとき
   span {
-      width: 50px;
-      height: 2px;
+      width: 10%;
+      @include mobile{
+          width: 15%;
+      }
+      height: 1%;
       background-color: $maincolor;
       position: absolute;
-      left: 25px;
+      left: 25%;
       transition: 0.3s ease-in-out;
       
       &:nth-child(1) {
           
-          top: 36px;
+          top: 20%;
       }
       &:nth-child(2) {
        
-         top: 50px; 
+         top: 28%;    
+       
       }
       &:nth-child(3) {
 
-        top: 64px;
-      }
-  }
+        top: 36%;
+      
+       }
+}
 }
 
 //メニューが開いている時
@@ -193,7 +210,7 @@ li {
       
      &:nth-child(1){
         top: 47px;
-        left: 25px;
+        left: 25%;
         background-color: #fff;
         transform: rotate(-45deg);   
  }
@@ -224,6 +241,9 @@ li {
          position: absolute;
          top: 40px;
          left: 50px;
+         @include mobile{
+             width: 30%;
+         }
      }
 
      .menu {
@@ -274,14 +294,13 @@ li {
     .about-text {
         text-align: center;
         line-height: 3;
-    
-    p:nth-child(1),
-    p:nth-child(4) {
-      margin-bottom: 30px;
+        p:nth-child(4){
+            margin-bottom: 100px;
+        }
+    @include mobile{
+        text-align: left;
     }
-    p:nth-child(5){
-      margin-bottom: 120px;
-    }    
+  
     }
     
 
@@ -296,7 +315,7 @@ li {
     width: 80%;
     margin: 0 auto;
     display:flex;
-    margin-bottom: 120px;
+    margin-bottom: 10%;
     transition-duration: 1000ms;
     transition-property: opacity, transform;
     opacity: 0;
@@ -310,6 +329,9 @@ li {
     width: 100%;
  p{
     font-size: 1rem;
+    @include mobile{
+      font-size: 0.75rem;
+      }
 }
 }
 
@@ -329,11 +351,11 @@ li {
     display: grid;
     gap: 100px;
     grid-template-columns: repeat(auto-fit, min-max(480px, 1fr));
-    margin-bottom: 120px;
+    margin-bottom: 8%;
 }
 .works-item {
     text-align: center;
-    margin-bottom: 140px;
+    margin-bottom: 10%;
     overflow: hidden;
     img {
         transition: 1s all;
@@ -353,10 +375,16 @@ li {
     padding: 0 50px;
     .site-title img{
         display: block;
-        padding-top: 92px;
+        padding-top: 42%;
+        @include mobile{
+            padding-top: 30%;
+        }
     }
     .menu {
         font-size: 1.25rem;
+        @include mobile{
+            font-size: 1rem;
+        }
     }
 }
 footer p {
