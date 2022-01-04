@@ -15,7 +15,7 @@
   left: 50px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 767px) {
   .flex-box {
     display: -webkit-box;
     display: -ms-flexbox;
