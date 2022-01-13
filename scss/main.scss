@@ -350,7 +350,7 @@ li {
 .works-box {
     display: grid;
     gap: 100px;
-    grid-template-columns: repeat(auto-fit, min-max(480px, 1fr));
+    grid-template-columns: repeat(auto-fit, min-max(412px, 1fr));
     margin-bottom: 8%;
 }
 .works-item {
